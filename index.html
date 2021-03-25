@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña | Mamá Lucchetti – Tienda Online</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/lucchetti.css">
+    <style>
+        input[type="submit"] {
+            -webkit-border-radius: 0 .25rem .25rem 0;
+            border-radius: 0 .25rem .25rem 0;
+        }
+        @media screen and (max-width: 767px) {
+            input[type="submit"] {
+                -webkit-border-radius: 0;
+                border-radius: 0;
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <img src="./assets/logo.png" alt="Lucchetti Storefront Pwd Image">
+        <h1>¡Muy Pronto!</h1>
+        <p>Mientras, suscribite al newsletter de Mamá para ser el primero en saber cuando llegamos a la tienda.</p>
+        <form action="./password/" class="mlist-form" id="mlist-form" method="post">
+            <input type="email" name="mlist-email" class="mlist-email" id="mlist-email" required>
+            <input type="submit" value="Enviar" class="mlist-submit">
+        </form>
+        <div style="display: none;">
+            <p class="social-header">O seguinos en nuestras redes:</p>
+            <ul>
+                <li>
+                    <a class="">
+                        <img src="" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img src="./assets/mamalucchetti.png" class="mama-image">
+    <script>
+        document.getElementById("mlist-form").onsubmit = function(){processForm()}
+        function processForm(){
+            document.getElementById("mlist-form").action = "https://formspree.io/f/xqkwzyyz";
+        }
+    </script>
+</body>
+</html>
