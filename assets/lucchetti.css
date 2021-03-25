@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    overflow: hidden;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    height: 100vh;
+}
+.page {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 435px;
+}
+.page img {
+    width: 100%;
+    max-width: 225px;
+}
+h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    margin: 0;
+}
+p {
+    margin-bottom: 0;
+}
+.mlist-form {
+    margin-top: 1rem;
+}
+.mlist-email {
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem;
+    width: 100%;
+    max-width: 218px;
+    height: 46px;
+    border-radius: .25rem 0 0 .25rem;
+    border: solid .1rem #000;
+}
+.mlist-email:focus {
+    outline: none;
+}
+.mlist-submit {
+    background-color: #202020;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    height: 46px;
+    padding: .5rem 1.5rem;
+    margin-left: -.25rem;
+    border: none;
+    border-radius: 0 .25rem .25rem 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+.mlist-submit:hover {
+    opacity: .75;
+}
+.social-header {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.mama-image {
+    width: 100%;
+    max-width: 125px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (max-width: 767px) {
+    .mlist-email {
+        border-radius: 0;
+    }
+    .mlist-submit {
+        width: 100%;
+        max-width: 218px;
+        border-radius: 0;
+        margin: .25rem auto;
+        vertical-align: initial;
+    }
+}
+@media screen and (max-width: 390px) {
+    .mama-image {
+        display: none;
+    }
+}
