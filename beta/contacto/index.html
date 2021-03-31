@@ -53,8 +53,8 @@
                         (<span class="cart-count">0</span>)
                     </a>
                     <div class="ajax-cart">
-                        <h2>Carrito de compras</h2>
-                        <p>Tu carrito de compras está vacío. <a class="continue-shopping">Seguí comprando</a>.</p>
+                        <!-- h2>Carrito de compras</h2>
+                        <p>Tu carrito de compras está vacío. <a class="continue-shopping">Seguí comprando</a>.</p-->
                     </div>
                 </li>
                 <li class="nav-item">
@@ -206,7 +206,7 @@
             $('.continue-shopping').click(function(){
                 $('.ajax-cart').slideUp(500);
             })
-            $('.ajax-cart').load("store.html .ajax-cart *");
+            $('.ajax-cart').load("../ .ajax-cart *");
             /* document.getElementById("mlist-email").oninvalid = function() {return validate()}
             function validate() {
                 var email = document.getElementById("mlist-email").value;
